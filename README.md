@@ -136,54 +136,55 @@ $ php bin/magento deploy:mode:set developer
 # Shortcut Command:
 $ php bin/magento d:m:se developer
 ```
-Change To Production Mode Using Command Line
-
-php bin/magento deploy:mode:set production
-
-Run the single-tenant Compiler Using Command Line
-
-php bin/magento setup:di:compile
-
-Unlock Admin User Using Command Line
-
-php bin/magento admin:user:unlock adminusername
-
-Enable Maintenance Mode Using Command Line
-
-php bin/magento maintenance:enable
-
-To enable maintenance mode for all clients except 192.0.0.1 and 192.0.0.2:
-
-php bin/magento maintenance:enable --ip=192.0.0.1 --ip=192.0.0.2
-
-To clear the list of IPs.
-
-php bin/magento maintenance:enable --ip=none
-
-Disable Maintenance Mode Using Command Line
-
-php bin/magento maintenance:disable
-
-Check Maintenance Mode Status Using Command Line
-
-php bin/magento maintenance:status
-
-Allow IP on Maintenance Mode Using Command Line
-
-php bin/magento maintenance:allow-ips --ip=192.0.0.1 --ip=192.0.0.2
-
-Set Magento crontab Using Command Line
-
-php bin/magento cron:install --force
-
+#### Change To Production Mode Using Command Line
+```sh
+$ php bin/magento deploy:mode:set production
+# Shortcut Command:
+$ php bin/magento d:m:se production
+```
+#### Run the single-tenant Compiler Using Command Line
+```sh
+$ php bin/magento setup:di:compile
+```
+#### Unlock Admin User Using Command Line
+```sh
+$ php bin/magento admin:user:unlock adminusername
+```
+#### Enable Maintenance Mode Using Command Line
+```sh
+$ php bin/magento maintenance:enable
+```
+#### To enable maintenance mode for all clients except 192.0.0.1 and 192.0.0.2:
+```sh
+$ php bin/magento maintenance:enable --ip=192.0.0.1 --ip=192.0.0.2
+```
+#### To clear the list of IPs.
+```sh
+$ php bin/magento maintenance:enable --ip=none
+```
+#### Disable Maintenance Mode Using Command Line
+```sh
+$ php bin/magento maintenance:disable
+```
+#### Check Maintenance Mode Status Using Command Line
+```sh
+$ php bin/magento maintenance:status
+```
+#### Allow IP on Maintenance Mode Using Command Line
+```sh
+$ php bin/magento maintenance:allow-ips --ip=192.0.0.1 --ip=192.0.0.2
+```
+#### Set Magento crontab Using Command Line
+```sh
+$ php bin/magento cron:install --force
+```
 Use --force to rewrite an existing Magento crontab.
 To view the crontab, enter the following command as the Magento file system owner.
-
-crontab -l
-
-Remove Magento crontab Using Command Line
-
-php bin/magento cron:remove
-
-
-I hope this Magento technical note helped you find what you were looking for. This is a comprehensive list of all useful Magento 2 commands; bookmark it for your future reference. Do comment below if you have any other handy commands which are not included in the list.
+```sh
+$ crontab -l
+```
+#### Remove Magento crontab Using Command Line
+```sh
+$ php bin/magento cron:remove
+```
+I hope this Magento technical note helped you find what you were looking for. This is a comprehensive list of all useful Magento 2 commands; bookmark it for your future reference.
