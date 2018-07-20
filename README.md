@@ -1,5 +1,9 @@
 # Magento 2 Useful Commands
 Below is the list of most important CLI commands for Magento 2 that I have found useful. To use these commands you will need to have SSH access to your server or use the Command Line for local access.
+#### Install Magento2 Using Command Line
+```sh
+$ php bin/magento setup:install --backend-frontname="admin" --key="admin" --session-save="files" --db-host="localhost" --db-name="magento_2_db" --db-user="root" --db-password="root" --base-url="http://local.magento.com/" --base-url-secure="https://local.magento2.com/" --admin-user="admin" --admin-password="admin123" --admin-email="admin@example.com" --admin-firstname="Admin" --admin-lastname="Admin"
+```
 #### Setup Upgrade Using Command Line
 ```sh
 $ php bin/magento setup:upgrade
